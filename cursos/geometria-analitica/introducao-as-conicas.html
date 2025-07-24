@@ -1,0 +1,201 @@
+<!DOCTYPE html><!--  Last Published: Thu Jul 24 2025 20:55:45 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65d488dc66adccfb62c4d35d" data-wf-site="63f7d8ac9c1e834521e55738">
+<head>
+  <meta charset="utf-8">
+  <title>Introdução às Cônicas</title>
+  <meta content="Introdução às Cônicas" property="og:title">
+  <meta content="Introdução às Cônicas" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../css/sophy1.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lexend:100,200,300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../../images/webclip.ico" rel="apple-touch-icon">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1R38YK8G55"></script>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-1R38YK8G55');</script><!--  Mathjax  -->
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  <!--  Hotjar Tracking Code for https://www.sophy.net.br/  -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3668976,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  <!--  js-cookie  -->
+  <script src="
+https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+"></script>
+</head>
+<body>
+  <div class="navbar navbarnonsticky">
+    <div class="navbar-left">
+      <div class="site-title-spot">
+        <a href="../../index.html" class="site-title">SOPHY</a>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a href="../../index.html" class="w-inline-block"><img src="../../images/sophy-logo-dark.svg" loading="lazy" width="80" alt="Logo" class="logo"></a>
+    </div>
+    <div class="navbar-right">
+      <a href="../../produtos.html" class="nav-link hideonmobile">Explorar</a>
+      <div class="navbar-dropdown">
+        <div data-hover="false" data-delay="0" class="w-dropdown">
+          <div class="dropdown-toggle hideonmobile w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="nav-link">Recursos</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <a href="../../user-account.html" class="navbardropdownlink w-dropdown-link">Minha Conta</a>
+          </nav>
+        </div>
+      </div><button class="user-log-in-log-out" data-wf-user-logout="SAIR" data-wf-user-login="ENTRAR" type="button">SAIR</button>
+    </div>
+  </div>
+  <section class="lessonsection">
+    <div class="lessonheadingcontainer w-container">
+      <h1 class="lessonheading">Introdução às Cônicas</h1>
+    </div>
+    <div class="mainlessoncontainer w-container">
+      <div class="textsize18">Agora iremos explorar extensivamente as Cônicas! Que são curvas matemáticas com propriedades muito interessantes, presentes em várias áreas da Matemática e Física.<br><br>As Cônicas servirão como ótimo ponto de partida para a sua jornada ao mundo das curvas geométricas!<br><br>Nessa aula introdutória, vamos analisar visualmente o que são as Cônicas e entender seu significado.</div>
+      <div class="verticalspacing50px"></div>
+      <h1 class="lessonsubheading">O que é uma Cônica?</h1>
+      <div class="verticalspacing30px"></div>
+      <div class="textsize18">Uma Cônica pode ser definida como a curva gerada pela interseção de um plano a um cone. É por isso que elas são chamadas Cônicas (ou Seções Cônicas).<br><br>Já que estamos definindo as Cônicas pela sua interseção a um cone, vamos definir visualmente o que é um cone:<br></div>
+      <div class="verticalspacing50px"></div>
+      <div class="textsize18 redtext">Animação interativa de um cone. O usuário poderá girar o cone, arrastar, tipo o geogebra.</div>
+      <div class="imgcenterdiv"><img src="../../images/Cone-Geogebra.png" loading="lazy" width="500" sizes="(max-width: 767px) 90vw, 500px" alt="" srcset="../../images/Cone-Geogebra-p-500.png 500w, ../../images/Cone-Geogebra-p-800.png 800w, ../../images/Cone-Geogebra.png 1038w"></div>
+      <div class="verticalspacing50px"></div>
+      <div class="textsize18">Note que para nossa análise, um cone é infinito e espelhado no seu vértice. Essa superfície é gerada pela rotação de uma reta em torno de um eixo que a intersecta em apenas um ponto.<br><br>A explicação detalhada desse tipo de cone está na aula de Superfícies de Revolução, no módulo de Quádricas.<br><br>Mas, para essa aula, isso é tudo que precisamos saber.<br><br>Agora, vamos investigar o que acontece quando cortamos esse tipo de cone com um plano:</div>
+      <div class="verticalspacing50px"></div>
+      <div class="textsize18 redtext">Animação que movimenta um plano ao longo de um cone várias vezes, gerando todos os casos possíveis de cônicas e pausando por um tempo neles. Do lado direito, fica a animação em 3D, do esquerdo, um gráfico com a cônica resultante dessa interseção. O usuário pode girar o cone como quiser.</div><img src="../../images/animação-interseção-cônicas-no-cone.png" loading="lazy" sizes="100vw" srcset="../../images/animação-interseção-cônicas-no-cone-p-500.png 500w, ../../images/animação-interseção-cônicas-no-cone-p-800.png 800w, ../../images/animação-interseção-cônicas-no-cone.png 1062w" alt="">
+      <div class="verticalspacing50px"></div>
+      <div class="textsize18">Veja como criamos diferentes curvas ao cortar um cone. Essas são exatamente as curvas Cônicas!</div>
+      <div class="verticalspacing30px"></div>
+      <div class="textemphasisdiv">
+        <div class="textemphasis orange">Uma Cônica representa a interseção de um plano e um cone</div>
+      </div>
+      <div class="verticalspacing50px"></div>
+      <h1 class="lessonsubheading">Para quê servem as Cônicas?</h1>
+      <div class="verticalspacing30px"></div>
+      <div class="textsize18">Vamos ver alguns exemplos dos usos das Cônicas no mundo real:</div>
+      <div class="verticalspacing30px"></div>
+      <ul role="list" class="defaultlist">
+        <li class="defaultlistitem">
+          <div class="textsize18">Matemática e Geometria: Como veremos nas próximas aulas, as Cônicas são estudadas como exemplos de curvas definidas por equações de segundo grau.</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Física: Podem ser utilizadas para descrever órbitas planetárias, aplicações em Ótica, Mecânica, entre outras.</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Engenharia: Aplicadas no design de estruturas, antenas e processos aerodinâmicos. Além de servir como modelos regressores para aproximar funções experimentais.</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Astronomia: Descrevem trajetórias de cometas, asteróides e satélites.</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Computação: São usadas em algoritmos de geometria computacional e processamento gráfico.</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Arquitetura e Arte: Podem ser empregadas em design de estruturas como abóbadas e cúpulas, além de elementos visuais em obras de arte.</div>
+        </li>
+        <li class="defaultlistitem lastlistitem">
+          <div class="textsize18">Otimização: Podem ser utilizadas em modelos de otimização para resolver problemas de programação não linear.</div>
+        </li>
+      </ul>
+      <div class="verticalspacing50px"></div>
+      <h1 class="lessonsubheading">Tipos possíveis de Cônicas</h1>
+      <div class="verticalspacing30px"></div>
+      <ul role="list" class="defaultlist orangeevidence">
+        <li class="defaultlistitem">
+          <div class="textsize18">Parábola</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Elipse</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Hipérbole</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Círculo (caso especial da Elipse)</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Reta (cônica degenerada)</div>
+        </li>
+        <li class="defaultlistitem">
+          <div class="textsize18">Retas duplas (cônica degenerada)</div>
+        </li>
+        <li class="defaultlistitem lastlistitem">
+          <div class="textsize18">Ponto (cônica degenerada)</div>
+        </li>
+      </ul>
+      <div class="verticalspacing30px"></div>
+      <div class="textsize18">Esses são os tipos de Seções Cônicas. Vamos dissecar todos eles ao longo desse módulo!<br><br>Na próxima aula, começaremos os desenvolvimentos matemáticos da Parábola.</div>
+    </div>
+  </section>
+  <section class="lessonendingsection">
+    <div class="lessonendingcontainer w-container">
+      <div class="lessonendinglinksdiv">
+        <a href="../../cursos/geometria-analitica/geometria-analitica-menu.html" class="link-block w-inline-block">
+          <div class="textsize18 nextpagelink">Retornar ao menu</div>
+        </a>
+        <a href="../../cursos/geometria-analitica/a-parabola.html" class="link-block w-inline-block">
+          <div class="textsize18 nextpagelink">Próxima aula</div>
+          <div class="horizontalspacing10px"></div><img src="../../images/Right-Arrow-blue.svg" loading="lazy" width="25" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="prefooterribbon">
+    <h1 class="prefooterheading">Descubra a Verdadeira Beleza da Ciência</h1>
+  </div>
+  <section class="footer-dark">
+    <div class="footercontainer">
+      <div class="footer-wrapper">
+        <a href="../../index.html" class="sophybrand w-inline-block"><img src="../../images/sophy-logo-dark.svg" loading="lazy" width="60" alt="sophy-logo">
+          <div class="text-block">Sophy</div>
+        </a>
+        <div class="footer-content">
+          <div id="w-node-_745666da-0a02-7d9e-53cd-cbfcd7402c15-d7402c0d" class="footer-block">
+            <div class="title-small">Produtos</div>
+            <a href="../../laboratorios-virtuais.html" class="footer-link">Laboratórios Virtuais</a>
+            <a href="../../simuladores/simulador-de-equacoes-diferenciais.html" class="footer-link">Simulador Geral</a>
+            <a href="../../cursos.html" class="footer-link">Cursos Interativos</a>
+          </div>
+          <div id="w-node-_745666da-0a02-7d9e-53cd-cbfcd7402c1a-d7402c0d" class="footer-block">
+            <div class="title-small">Recursos</div>
+            <a href="../../user-account.html" class="footer-link">Minha Conta</a>
+          </div>
+          <div id="w-node-_745666da-0a02-7d9e-53cd-cbfcd7402c23-d7402c0d" class="footer-block">
+            <div class="title-small">Empresa</div>
+            <a href="../../sobre.html" class="footer-link">Sobre Nós</a>
+            <a href="../../contato.html" class="footer-link">Contato</a>
+          </div>
+          <div id="w-node-_745666da-0a02-7d9e-53cd-cbfcd7402c2a-d7402c0d" class="footer-block">
+            <div class="title-small">Sobre</div>
+            <a href="../../termos-e-condicoes.html" class="footer-link">Termos &amp; Condições</a>
+            <a href="../../politica-de-privacidade.html" class="footer-link">Política de Privacidade</a>
+            <div class="footer-social-block">
+              <a href="../../ainda-sem-redes-sociais.html" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a389912aad8_linkedin%20small.svg" loading="lazy" alt="LinkedIn"></a>
+              <a href="../../ainda-sem-redes-sociais.html" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a51bf12aae9_facebook%20small.svg" loading="lazy" alt="Facebook"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-copyright-center">Copyright © 2025 Sophy</div>
+  </section>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63f7d8ac9c1e834521e55738" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../../js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
